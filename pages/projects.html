@@ -4,21 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Projects • Tawhid Monowar</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="../app/res/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../app/res/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../app/res/img/favicon-16x16.png">
-  <link rel="manifest" href="../app/res/img/site.webmanifest">
-  <link rel="stylesheet" href="../style/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+  <link rel="manifest" href="../app/config/site.webmanifest">
+  <link rel="stylesheet" href="../app/styles/style.css">
   <script>/*Empty script*/</script>
+
   <!-- partial -->
-  <script src='../app/script/tailwind.js'></script>
+  <script src='../app/scripts/tailwind.js'></script>
+  <script src='../app/scripts/data-script.js'></script>
 
   <!--Author: Tawhid Monowar-->
+  <!--All rights reserved-->
 
 </head>
 
-<body>
-  <div class="bg-white md:mx-auto rounded shadow-xl w-[680px] overflow-hidden">
+<body class="bg-[#f5f5f5]">
+  <div class="bg-white md:mx-auto rounded shadow-md w-[800px] overflow-hidden">
     <div class="h-[140px] bg-gradient-to-r from-cyan-500 to-blue-500"></div>
 
     <div class="flex flex-col gap-3">
@@ -26,53 +29,51 @@
 
         <a href="../index.html">
           <div
-            class="text-xs inline-flex items-center leading-sm px-3 py-1 bg-blue-100 hover:bg-blue-200 text-blue-600 rounded border pt-2 pb-2">
+            class="text-xs inline-flex items-center leading-sm px-3 py-1 bg-blue-100 hover:bg-blue-200 text-blue-600 rounded pt-2 pb-2 ml-3">
             Home
           </div>
         </a>
         <a>
           <div
-            class="text-xs font-bold inline-flex items-center leading-sm px-3 py-1 bg-blue-500 text-white rounded border pt-2 pb-2">
+            class="text-xs font-bold inline-flex items-center leading-sm px-3 py-1 bg-blue-500 text-white rounded pt-2 pb-2">
             Projects
           </div>
         </a>
 
+        <a href="./gallery.html">
+          <div
+            class="text-xs inline-flex items-center leading-sm px-3 py-1 bg-blue-100 hover:bg-blue-200 text-blue-600 rounded pt-2 pb-2">
+            Resume
+          </div>
+        </a>
 
         <a href="./certifications.html">
           <div
-            class="text-xs inline-flex items-center leading-sm px-3 py-1 bg-blue-100 hover:bg-blue-200 text-blue-600 rounded border pt-2 pb-2">
+            class="text-xs inline-flex items-center leading-sm px-3 py-1 bg-blue-100 hover:bg-blue-200 text-blue-600 rounded pt-2 pb-2">
             Certifications
           </div>
         </a>
 
         <a href="./awards.html">
           <div
-            class="text-xs inline-flex items-center leading-sm px-3 py-1 bg-blue-100 hover:bg-blue-200 text-blue-600 rounded border pt-2 pb-2">
+            class="text-xs inline-flex items-center leading-sm px-3 py-1 bg-blue-100 hover:bg-blue-200 text-blue-600 rounded pt-2 pb-2">
             Honors & Awards
           </div>
         </a>
 
         <a href="./blogs.html">
           <div
-            class="text-xs inline-flex items-center leading-sm px-3 py-1  bg-blue-100 hover:bg-blue-200 text-blue-600 rounded border pt-2 pb-2">
-            Blogs
+            class="text-xs inline-flex items-center leading-sm px-3 py-1  bg-blue-100 hover:bg-blue-200 text-blue-600 rounded pt-2 pb-2">
+            Blogs & Articles
           </div>
         </a>
 
         <a href="./gallery.html">
           <div
-            class="text-xs inline-flex items-center leading-sm px-3 py-1 bg-blue-100 hover:bg-blue-200 text-blue-600 rounded border pt-2 pb-2">
-            Gallery
+            class="text-xs inline-flex items-center leading-sm px-3 py-1 bg-blue-100 hover:bg-blue-200 text-blue-600 rounded pt-2 pb-2">
+            Research & Publications
           </div>
         </a>
-
-        <a href="./gallery.html">
-          <div
-            class="text-xs inline-flex items-center leading-sm px-3 py-1 bg-blue-100 hover:bg-blue-200 text-blue-600 rounded border pt-2 pb-2">
-            Resume
-          </div>
-        </a>
-
       </div>
     </div>
 
@@ -80,13 +81,79 @@
     <div class="px-5 py-2 grid grid-cols-2 gap-4 pb-6 mt-3">
     
       <div class="relative mx-auto w-full">
+        <a target="_blank" href="https://github.com/tawhidmonowar/ReadOut"
+          class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
+          <div class="shadow p-4 rounded bg-white">
+            <div class="flex justify-center relative rounded overflow-hidden h-52">
+              <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
+                <div class="absolute inset-0">
+                  <img class="object-cover h-auto max-w-full rounded" src="../assets/images/project_read_out.png"
+                    alt="ReadOut">
+                </div>
+              </div>
+
+              <div class="absolute flex justify-center bottom-0 mb-3">
+                <div class="flex bg-white px-4 py-1 space-x-5 rounded-lg overflow-hidden shadow">
+                  <p class="flex items-center font-medium text-gray-800">
+                    Kotlin | CMP | KMP
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1">
+                ReadOut
+              </h2>
+              <p class="mt-2 text-sm text-gray-800 line-clamp-2">
+                "ReadOut" is a cross-platform app for Android and Desktop, built with Kotlin Multiplatform. It seamlessly integrates book discovery, audiobook playback, and AI-powered summaries in both text and audio formats. 
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="relative mx-auto w-full">
+        <a target="_blank" href="https://github.com/tawhidmonowar/WebCapture"
+          class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
+          <div class="shadow p-4 rounded bg-white">
+            <div class="flex justify-center relative rounded overflow-hidden h-52">
+              <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
+                <div class="absolute inset-0">
+                  <img class="object-cover h-auto max-w-full rounded" src="../assets/images/project_web_capture.png"
+                    alt="web_capture">
+                </div>
+              </div>
+
+              <div class="absolute flex justify-center bottom-0 mb-3">
+                <div class="flex bg-white px-4 py-1 space-x-5 rounded-lg overflow-hidden shadow">
+                  <p class="flex items-center font-medium text-gray-800">
+                    Java | Android Studio
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1">
+                WebCapture
+              </h2>
+              <p class="mt-2 text-sm text-gray-800 line-clamp-2">
+                WebCapture is an open source Android application that allows users to convert any web page into a PDF file. 
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="relative mx-auto w-full">
         <a target="_blank" href="https://github.com/tawhidmonowar/empty_classroom"
           class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
           <div class="shadow p-4 rounded bg-white">
             <div class="flex justify-center relative rounded overflow-hidden h-52">
               <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
                 <div class="absolute inset-0">
-                  <img class="object-cover h-auto max-w-full rounded" src="../app/res/proj/empty_classroom.png"
+                  <img class="object-cover h-auto max-w-full rounded" src="../assets/images/project_empty_classroom.png"
                     alt="empty_classroom">
                 </div>
               </div>
@@ -120,8 +187,8 @@
             <div class="flex justify-center relative rounded overflow-hidden h-52">
               <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
                 <div class="absolute inset-0">
-                  <img class="object-cover h-auto max-w-full rounded" src="../app/res/proj/polyglot-ai.jpg"
-                    alt="image description">
+                  <img class="object-cover h-auto max-w-full rounded" src="../assets/images/project_polyglot-ai.png"
+                    alt="polyglot_ai">
                 </div>
               </div>
 
@@ -148,14 +215,14 @@
       </div>
 
       <div class="relative mx-auto w-full">
-        <a target="_blank" href="https://github.com/tawhidmonowar/maze_runner"
+        <a target="_blank" href="https://github.com/tawhidmonowar/maze-runner"
           class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
           <div class="shadow p-4 rounded bg-white">
             <div class="flex justify-center relative rounded overflow-hidden h-52">
               <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
                 <div class="absolute inset-0">
-                  <img class="object-cover h-auto max-w-full rounded" src="../app/res/proj/maze_runner.png"
-                    alt="image description">
+                  <img class="object-cover h-auto max-w-full rounded" src="../assets/images/project_maze_runner.png"
+                    alt="Maze Runner">
                 </div>
               </div>
 
@@ -173,7 +240,7 @@
                 Maze Runner (Alpha)
               </h2>
               <p class="mt-2 text-sm text-gray-800 line-clamp-2">
-                "Maze Runner" a line follower robot that can follow a simple white/black track...
+                Maze Runner is a simple line follower robot that can follow a simple white/black track. Technologies used Arduino UNO, L293D Motor Driver Shield, Digital IR Sensor Array etc.
               </p>
             </div>
           </div>
@@ -181,21 +248,21 @@
       </div>
 
       <div class="relative mx-auto w-full">
-        <a target="_blank" href="https://github.com/tawhidmonowar/URLtoPDFConverter"
+        <a target="_blank" href="https://www.tinkercad.com/things/i3MNJf0gOox-guessing-game-using-arduino-uno"
           class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
           <div class="shadow p-4 rounded bg-white">
             <div class="flex justify-center relative rounded overflow-hidden h-52">
               <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
                 <div class="absolute inset-0">
-                  <img class="object-cover h-auto max-w-full rounded" src="../app/res/proj/url_to_pdf.jpg"
-                    alt="image description">
+                  <img class="object-cover h-auto max-w-full rounded" src="../assets/images/project_guessing_game.png"
+                    alt="Guessing Game">
                 </div>
               </div>
 
               <div class="absolute flex justify-center bottom-0 mb-3">
                 <div class="flex bg-white px-4 py-1 space-x-5 rounded-lg overflow-hidden shadow">
                   <p class="flex items-center font-medium text-gray-800">
-                    Java | Android Studio
+                    Arduino
                   </p>
                 </div>
               </div>
@@ -203,15 +270,83 @@
 
             <div class="mt-4">
               <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1">
-                URL to PDF Converter
+                Guessing Game
               </h2>
               <p class="mt-2 text-sm text-gray-800 line-clamp-2">
-                "URL to PDF Converter" an Android app that can converter any web page into PDF files
+                The Number guessing game is a simple guessing game where a user is supposed to guess a number between 0 and 9 in a maximum of 5 attempts. The game will end after 5 attempts and if the player failed to guess the number, then he loses the game.
               </p>
             </div>
           </div>
         </a>
       </div>
+
+      <div class="relative mx-auto w-full">
+        <a target="_blank" href="https://github.com/tawhidmonowar/cnc-pen-plotter-machine"
+          class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
+          <div class="shadow p-4 rounded bg-white">
+            <div class="flex justify-center relative rounded overflow-hidden h-52">
+              <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
+                <div class="absolute inset-0">
+                  <img class="object-cover h-auto max-w-full rounded" src="../assets/images/project_CNC_Pen_Plotter_Machine.png"
+                    alt="CNC Pen Plotter Machine">
+                </div>
+              </div>
+
+              <div class="absolute flex justify-center bottom-0 mb-3">
+                <div class="flex bg-white px-4 py-1 space-x-5 rounded-lg overflow-hidden shadow">
+                  <p class="flex items-center font-medium text-gray-800">
+                    Arduino
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1">
+                CNC Pen Plotter Machine
+              </h2>
+              <p class="mt-2 text-sm text-gray-800 line-clamp-2">
+                An Arduino-powered CNC pen plotter that converts G-code instructions into precise drawings. Features a 3D-printed 3-axis system using 28BYJ-48 stepper motors with ULN2003 drivers for accurate pen movement. 
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="relative mx-auto w-full">
+        <a target="_blank" href="https://github.com/tawhidmonowar/AQMS"
+          class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
+          <div class="shadow p-4 rounded bg-white">
+            <div class="flex justify-center relative rounded overflow-hidden h-52">
+              <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
+                <div class="absolute inset-0">
+                  <img class="object-cover h-auto max-w-full rounded" src="../assets/images/project_AQMS.png"
+                    alt="Real-Time Air Quality Monitoring Systems">
+                </div>
+              </div>
+
+              <div class="absolute flex justify-center bottom-0 mb-3">
+                <div class="flex bg-white px-4 py-1 space-x-5 rounded-lg overflow-hidden shadow">
+                  <p class="flex items-center font-medium text-gray-800">
+                    ESP-32
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1">
+                Air Quality Monitoring Systems
+              </h2>
+              <p class="mt-2 text-sm text-gray-800 line-clamp-2">
+                A real-time air quality monitoring system built with ESP32 and MQ135 gas sensors to detect air pollution levels. Features a 16x2 LCD for live data display, a 10K potentiometer for contrast adjustment, and a buzzer for alert notifications.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+     
 
 
     </div>
@@ -220,8 +355,8 @@
       <!-- Help text -->
       <span class="text-sm text-gray-700 dark:text-white">
         Showing <span class="font-bold text-gray-900 dark:text-white">1</span> to <span
-          class="font-bold text-gray-900 dark:text-white">4</span> of <span
-          class="font-bold text-gray-900 dark:text-white">4</span> Entries
+          class="font-bold text-gray-900 dark:text-white">8</span> of <span
+          class="font-bold text-gray-900 dark:text-white">8</span> Entries
       </span>
       <div class="inline-flex mt-2 xs:mt-0">
         <!-- Buttons -->
