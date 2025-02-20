@@ -7,7 +7,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
-  <link rel="manifest" href="./app/configs/site.webmanifest">
+  <link rel="manifest" href="./app/config/site.webmanifest">
   <link rel="stylesheet" href="./app/styles/style.css">
   <script>/*Empty script*/</script>
 
@@ -20,12 +20,12 @@
 
 </head>
 
-<body>
-  <div class="bg-white md:mx-auto rounded shadow-xl w-[800px] overflow-hidden">
+<body class="bg-[#f5f5f5]">
+  <div class="bg-white md:mx-auto rounded shadow-md w-[800px] overflow-hidden">
     <div class="h-[140px] bg-gradient-to-r from-cyan-500 to-blue-500"></div>
     <div class="px-5 py-2 flex flex-col gap-3 pb-6">
       <div class="h-[90px] shadow-md w-[90px] rounded-full border-4 overflow-hidden -mt-14 border-white">
-        <img src="./app/res/img/profile.jpg" class="w-full h-full rounded-full object-center object-cover">
+        <img src="./assets/images/profile.jpg" class="w-full h-full rounded-full object-center object-cover">
       </div>
       <div class="">
         <h3 class="text-xl text-slate-900 relative font-bold leading-6">Tawhid Monowar</h3>
@@ -184,6 +184,27 @@
 
               <a href="https://icpc.global/ICPCID/O8Z6XNWSL225" target="_blank">Show Credential</a>
 
+            </button>
+          </div>
+
+          <div class="flex items-center gap-3 px-2 py-3 bg-white rounded border w-full ">
+            <svg style="color: #64748b" width="35" height="35" viewBox="0 0 48 48" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10 7V37C10 38.6569 11.3431 40 13 40H26V36.4649C24.8044 35.7733 24 34.4806 24 33C24 30.7909 25.7909 29 28 29C30.2091 29 32 30.7909 32 33C32 34.4806 31.1956 35.7733 30 36.4649V40H35C36.6569 40 38 38.6569 38 37V7C38 5.34315 36.6569 4 35 4H13C11.3431 4 10 5.34315 10 7ZM28 35C29.1046 35 30 34.1046 30 33C30 31.8954 29.1046 31 28 31C26.8954 31 26 31.8954 26 33C26 34.1046 26.8954 35 28 35ZM18 11C18 10.4477 18.4477 10 19 10L29 10C29.5523 10 30 10.4477 30 11C30 11.5523 29.5523 12 29 12L19 12C18.4477 12 18 11.5523 18 11ZM15 16C14.4477 16 14 16.4477 14 17C14 17.5523 14.4477 18 15 18H33C33.5523 18 34 17.5523 34 17C34 16.4477 33.5523 16 33 16H15ZM14 21C14 20.4477 14.4477 20 15 20H33C33.5523 20 34 20.4477 34 21C34 21.5523 33.5523 22 33 22H15C14.4477 22 14 21.5523 14 21ZM15 24C14.4477 24 14 24.4477 14 25C14 25.5523 14.4477 26 15 26H33C33.5523 26 34 25.5523 34 25C34 24.4477 33.5523 24 33 24H15Z"
+                fill="#64748b"></path>
+              <path d="M26 44V40H30V44L28 42.5L26 44Z" fill="#64748b"></path>
+            </svg>
+            <div class="leading-3">
+              <p class="text-sm text-slate-700">
+                Python Programming & Basic Data Science</p><span class="text-xs text-slate-600">
+                ICT Division - Issued Nov 2024</span>
+            </div>
+
+            <button type="button"
+              class="self-start ml-auto inline-flex w-auto cursor-pointer select-none appearance-none items-center justify-center space-x-1 rounded border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:border-gray-300 active:bg-white hover:bg-gray-100 focus:border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">
+              <a href="https://training.edge.gov.bd/storage/certificate/student-training/certificate_674d8ad7403790.65777105.pdf"
+                target="_blank">Show Credential</a>
             </button>
           </div>
 
@@ -359,8 +380,8 @@
   </div>
   </div>
 
-  <script src='./app/script/tailwind.js'></script>
-  <script src='./app/script/data-script.js'></script>
+  <script src='./app/scripts/tailwind.js'></script>
+  <script src='./app/scripts/data-script.js'></script>
 
 </body>
 
