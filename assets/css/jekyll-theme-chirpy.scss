@@ -1,0 +1,34 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+#sidebar .site-title {
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: .25px;
+    margin-top: 1.25rem;
+    margin-bottom: .5rem;
+    width: fit-content;
+    color: #b5b5b5;
+  }
+
+  #sidebar .site-subtitle {
+    font-size: 100%;
+    color: var(--site-subtitle-color);
+    margin-top: -0.6rem;
+    word-spacing: 1px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
