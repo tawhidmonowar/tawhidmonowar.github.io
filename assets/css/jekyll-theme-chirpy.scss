@@ -19,7 +19,7 @@
     margin-top: 1.25rem;
     margin-bottom: .5rem;
     width: fit-content;
-    color: #b5b5b5;
+    color: var(--sidebar-active-color);
   }
 
   #sidebar .site-subtitle {
@@ -41,4 +41,16 @@
     height: 3px;
     border-radius: 50%;
     margin-bottom: .5rem;
+  }
+
+  .skill-category {
+    margin: 10px 0;
+  }
+
+  .skill-item {
+    background-color: var(--sidebar-hover-bg);
+    border-radius: 8px;
+    padding: 0px 10px 1px 10px;
+    margin: 5px 5px 5px 0;
+    display: inline-block;
   }
