@@ -1,0 +1,50 @@
+#  The right side contact options.
+
+- type: hackerrank
+  icon: 'fa-brands fa-hackerrank'
+  url:  'https://www.hackerrank.com/profile/tawhidmonowar'
+
+- type: stack-overflow
+  icon: 'fab fa-stack-overflow'
+  url:  'https://stackoverflow.com/users/14127518/tawhid-monowar'
+
+- type: stoptalk
+  icon: 'fa-solid fa-ban'
+  url:  'https://www.stopstalk.com/user/profile/tawhidmonowar'
+
+- type: buymeacoffee
+  icon: "fa-solid fa-mug-hot"
+  url: 'https://buymeacoffee.com/tawhidmonowar'
+
+- type: x
+  icon: "fa-brands fa-x-twitter"
+  url: 'https://x.com/tawhidmonowar'
+
+- type: facebook
+  icon: "fa-brands fa-facebook-f"
+  url: 'https://www.facebook.com/tawhidmonowar'
+
+
+
+# Uncomment and complete the url below to enable more contact options
+#
+# - type: mastodon
+#   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
+#   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
+#
+#
+# - type: stack-overflow
+#   icon: 'fab fa-stack-overflow'
+#   url:  ''                  # Fill with your stackoverflow homepage
+#
+# - type: bluesky
+#   icon: 'fa-brands fa-bluesky'
+#   url: ''                   # Fill with your Bluesky profile link
+#
+# - type: reddit
+#   icon: 'fa-brands fa-reddit'
+#   url: ''                   # Fill with your Reddit profile link
+#
+# - type: threads
+#   icon: 'fa-brands fa-threads'
+#   url: ''                   # Fill with your Threads profile link
