@@ -48,6 +48,9 @@
 
       {% if url %}
         <a
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          data-bs-original-title="{{ entry.type}}"
           class="right-contact"
           href="{{ url }}"
           aria-label="{{ entry.type }}"

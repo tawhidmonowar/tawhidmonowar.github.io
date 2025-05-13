@@ -71,6 +71,9 @@
 
       {% if url %}
         <a
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          data-bs-original-title="{{ entry.type}}"
           href="{{ url }}"
           aria-label="{{ entry.type }}"
           {% assign link_types = '' %}

@@ -1,16 +1,17 @@
 #  The contact options.
 
-- type: github
+- type: GitHub
   icon: "fab fa-github"
+  url: 'https://github.com/tawhidmonowar'
 
-- type: linkedin
+- type: LinkedIn
   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
   url:  'https://www.linkedin.com/in/tawhidmonowar' # Fill with your Linkedin homepage
 
 # - type: twitter
 #  icon: "fa-brands fa-x-twitter"
 
-- type: leetcode
+- type: LeetCode
   icon: 'fa-solid fa-code'
   url: 'https://leetcode.com/u/tawhidmonowar'
   # noblank: true # open link in current tab

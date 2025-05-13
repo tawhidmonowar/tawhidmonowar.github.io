@@ -1,26 +1,26 @@
 #  The right side contact options.
 
-- type: hackerrank
+- type: HackerRank
   icon: 'fa-brands fa-hackerrank'
   url:  'https://www.hackerrank.com/profile/tawhidmonowar'
 
-- type: stack-overflow
+- type: Stack Overflow
   icon: 'fab fa-stack-overflow'
   url:  'https://stackoverflow.com/users/14127518/tawhid-monowar'
 
-- type: stoptalk
+- type: StopStalk
   icon: 'fa-solid fa-ban'
   url:  'https://www.stopstalk.com/user/profile/tawhidmonowar'
 
-- type: buymeacoffee
+- type: Buy Me a Coffee
   icon: "fa-solid fa-mug-hot"
   url: 'https://buymeacoffee.com/tawhidmonowar'
 
-- type: x
+- type: Twitter
   icon: "fa-brands fa-x-twitter"
   url: 'https://x.com/tawhidmonowar'
 
-- type: facebook
+- type: Facebook
   icon: "fa-brands fa-facebook-f"
   url: 'https://www.facebook.com/tawhidmonowar'
 
