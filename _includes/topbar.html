@@ -3,14 +3,23 @@
 <header id="topbar-wrapper" class="flex-shrink-0" aria-label="Top Bar">
   <div
     id="topbar"
-    class="d-flex align-items-center justify-content-between px-lg-3 h-100"
-  >
+    class="d-flex align-items-center justify-content-between px-lg-3 h-100">
+
     <nav id="breadcrumb" aria-label="Breadcrumb">
       {% assign paths = page.url | split: '/' %}
 
       {% if paths.size == 0 or page.layout == 'home' %}
         <!-- index page -->
         <span>{{ site.data.locales[include.lang].tabs.home | capitalize }}</span>
+
+      {% elsif page.url contains 'blogs' %}
+        <!-- blog page -->
+        <span>
+          <a href="{{ '/' | relative_url }}">
+            {{- site.data.locales[include.lang].tabs.home | capitalize -}}
+          </a>
+          <span><span id="whitespace"> › </span>{{ site.data.locales[include.lang].tabs[item] | default: page.title }}</span>
+        </span>
 
       {% else %}
         {% for item in paths %}
@@ -28,9 +37,15 @@
               <span>{{ page.title }}</span>
             {% endif %}
 
-          {% elsif page.layout == 'category' or page.layout == 'tag' %}
+          {% elsif page.layout == 'tag' %}
             <span>
               <a href="{{ item | append: '/' | relative_url }}">
+                {{- site.data.locales[include.lang].tabs[item] | default: page.title -}}
+              </a>
+            </span>
+          {% elsif page.layout == 'category' %}
+            <span>
+              <a href="javascript:history.back()">
                 {{- site.data.locales[include.lang].tabs[item] | default: page.title -}}
               </a>
             </span>
