@@ -45,12 +45,10 @@
       {% if show %}
         <!-- show number -->
         <li class="page-item {% if i == paginator.page %} active{% endif %}">
-          <a
-            class="page-link"
-            href="{% if i > 1 %}{{ site.paginate_path | replace: ':num', i | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}"
-          >
+          <a class="page-link" href="{% if i > 1 %}/page/{{ i }}/blogs.html{% else %}/blogs.html{% endif %}">
             {{- i -}}
           </a>
+
         </li>
       {% else %}
         <!-- hide number -->
