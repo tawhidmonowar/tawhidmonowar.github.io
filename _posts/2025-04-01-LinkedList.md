@@ -4,7 +4,6 @@ description: A linked list is a linear data structure where each element (node) 
 author: tawhidmonowar
 date: 2025-04-01 11:30:00 +06:00
 categories: [Data Structure, Linked List]
-tags: [single linked list, doubly linked list]
 ---
 
 ## Linked List
