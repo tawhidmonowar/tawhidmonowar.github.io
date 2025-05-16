@@ -13,6 +13,8 @@ order: 2
       <em>RadioWave</em> : (Android & iOS Application)<br>
       A cross-platform internet radio player app with over 50,000 global stations and real-time song recognition.
     </td>
+  </tr>
+<tr>  
     <td>
       <a href="https://github.com/tawhidmonowar/ReadOut">
         <img src="https://github.com/tawhidmonowar/tawhidmonowar.github.io/blob/main/assets/img/projects/read-out.png" alt="ReadOut" width="500">
