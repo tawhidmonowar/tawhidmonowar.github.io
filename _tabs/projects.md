@@ -3,4 +3,7 @@ layout: page
 icon: fa-solid fa-diagram-project
 order: 2
 ---
-Coming
+
+![RadioWave](/assets/img/projects/radio-wave.png){: width="972" height="589" .w-50 .left}
+[**RadioWave**](https://github.com/OneDroid/RadioWave): _**(Android & iOS Application)**_ <br>
+RadioWave is a cross-platform internet radio player for Android and iOS, built with Kotlin Multiplatform. It provides access to over 50,000 stations worldwide with automatic song recognition that identifies what's playing in real time. 
