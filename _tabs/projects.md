@@ -15,3 +15,13 @@ Technologies: `Kotlin` • `Kotlin Multiplatform` • `SQLLight` • `MVVM + Cle
 
 ---
 
+<br>
+
+![RadioWave](/assets/img/projects/read-out.jpg)
+
+### [**ReadOut**](https://github.com/tawhidmonowar/ReadOut): (Android & Desktop Application)
+
+ReadOut is a cross-platform app for Android and Desktop, built with Kotlin Multiplatform. It offers 28 million books, 20,000+ audiobooks, and features like AI-powered insights, personalized book searches, favorite book saving, dual themes, and seamless audio playback on both desktop and mobile.
+
+Technologies: `Kotlin` • `Kotlin Multiplatform` • `SQLLight` • `MVI + Clean Architecture` • `REST APIs`
+
