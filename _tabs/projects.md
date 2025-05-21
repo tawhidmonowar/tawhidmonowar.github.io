@@ -4,7 +4,7 @@ icon: fa-solid fa-diagram-project
 order: 2
 ---
 
-![RadioWave](/assets/img/projects/radio-wave.png){:width="972" height="589" .w-50 .left} 
+![RadioWave](/assets/img/projects/radio-wave.png){:width="972" height="589" .w-50} 
 
 ### [**RadioWave**](https://github.com/OneDroid/RadioWave): (Android & iOS Application)
 
