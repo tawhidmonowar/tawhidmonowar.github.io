@@ -25,3 +25,15 @@ ReadOut is a cross-platform app for Android and Desktop, built with Kotlin Multi
 
 Technologies: `Kotlin` • `Kotlin Multiplatform` • `SQLLight` • `MVI + Clean Architecture` • `REST APIs`
 
+---
+
+<br>
+
+![WebCapture](/assets/img/projects/web-capture.jpg)
+
+### [**WebCapture**](https://github.com/tawhidmonowar/WebCapture): (Android Application)
+
+WebCapture is an open source Android application that allows users to convert any web page into a PDF file. With this app, users can easily save web pages for offline reading, share web pages as PDF files, or simply keep a copy of important web pages for future reference. 
+
+Technologies: `Java` • `XML` • `YouTube API` • `OkHttp` • `Material3`
+
