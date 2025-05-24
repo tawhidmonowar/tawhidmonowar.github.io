@@ -7,13 +7,12 @@ categories: [Problem Solving, Number Theory]
 ---
 
 ## Large Numbers
+
+In programming, when a number is too large to fit in built-in data types like `long long int`, we refer to it as a large number or big integer.
+
 ### Doubling a Large Number
 
-When a number is too large to fit in built-in data types like `long long int`, we can represent it as a string and perform arithmetic manually.
-
-**Concept:**
-
-We go through each digit in the number (from right to left), double it, and keep track of any "carry" to the next digit. After we're done, we reverse the result to get the final answer.
+We go through each digit in the number (from right to left), double it, and keep track of any `carry` to the next digit. After we're done, we `reverse` the result to get the final answer.
 
 **Key Steps:**
 
