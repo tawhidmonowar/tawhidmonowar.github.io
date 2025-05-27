@@ -22,7 +22,7 @@ MVVM is a design pattern that separates UI (View), business logic (ViewModel), a
   
 Example: Task Manager
 
-1. `Task.kt` (Model)
+1. `Task` (Model)
 
 ```kotlin
 data class Task(
@@ -34,7 +34,7 @@ data class Task(
 {: file='Task.kt'}
 
 
-2. `TaskViewModel.kt` (ViewModel)
+2. `TaskViewModel` (ViewModel)
 
 ```kotlin
 class TaskViewModel : ViewModel() {
@@ -68,7 +68,7 @@ class TaskViewModel : ViewModel() {
 ```
 {: file='TaskViewModel.kt'}
 
-3. `TaskScreen.kt` (Compose UI/View)
+3. `TaskScreen` (Compose UI/View)
 
 ```kotlin
 @Composable
@@ -157,7 +157,7 @@ fun TaskItem(
 ```
 {: file='TaskScreen.kt'}
 
-4. `MainActivity.kt`
+4. `MainActivity`
 
 ```kotlin
 class MainActivity : ComponentActivity() {
@@ -168,6 +168,213 @@ class MainActivity : ComponentActivity() {
                 val viewModel: TaskViewModel = viewModel()
                 TaskScreen(viewModel)
             }
+        }
+    }
+}
+```
+{: file='MainActivity.kt'}
+
+### MVI (Model-View-Intent)
+
+MVI, the most recent addition to the MV* family, structures an application into three components.
+
+- **Model**: Represents the states for the UI
+- **View**: Represents the UI itself
+- **Intent**: Represents actions triggering state updates
+
+The following diagram provides a comprehensive overview of the MVI architecture.
+
+![mvi](/assets/img/posts/mvi.jpg)
+
+Example: Task Manager
+
+1. `Task` (Model)
+   
+```kotlin
+data class Task(
+    val id: Int,
+    val title: String,
+    val isDone: Boolean = false
+)
+```
+{: file='Task.kt'}
+
+2. `TaskState` (State)
+
+```kotlin
+data class TaskState(
+    val tasks: List<Task> = emptyList(),
+    val input: String = ""
+)
+```
+{: file='TaskState.kt'}
+
+3. `Intents` (User actions)
+
+```kotlin
+sealed class TaskIntent {
+    data class AddTask(val title: String) : TaskIntent()
+    data class ToggleTaskDone(val taskId: Int) : TaskIntent()
+    data class DeleteTask(val taskId: Int) : TaskIntent()
+    data class UpdateInput(val input: String) : TaskIntent()
+}
+```
+{: file='TaskIntent.kt'}
+
+4. `ViewModel` (State + Intent processing)
+
+```kotlin
+class TaskViewModel : ViewModel() {
+
+    private var nextId = 1
+
+    private val _state = MutableStateFlow(TaskState())
+    val state: StateFlow<TaskState> = _state.asStateFlow()
+
+    fun process(intent: TaskIntent) {
+        when (intent) {
+            is TaskIntent.AddTask -> addTask(intent.title)
+            is TaskIntent.ToggleTaskDone -> toggleTaskDone(intent.taskId)
+            is TaskIntent.DeleteTask -> deleteTask(intent.taskId)
+            is TaskIntent.UpdateInput -> updateInput(intent.input)
+        }
+    }
+
+    private fun addTask(title: String) {
+        if (title.isBlank()) return
+
+        _state.update { currentState ->
+            val newTask = Task(id = nextId++, title = title.trim())
+            currentState.copy(
+                tasks = currentState.tasks + newTask,
+                input = ""
+            )
+        }
+    }
+
+    private fun toggleTaskDone(taskId: Int) {
+        _state.update { currentState ->
+            currentState.copy(
+                tasks = currentState.tasks.map {
+                    if (it.id == taskId) it.copy(isDone = !it.isDone) else it
+                }
+            )
+        }
+    }
+
+    private fun deleteTask(taskId: Int) {
+        _state.update { currentState ->
+            currentState.copy(
+                tasks = currentState.tasks.filter { it.id != taskId }
+            )
+        }
+    }
+
+    private fun updateInput(input: String) {
+        _state.update { currentState ->
+            currentState.copy(input = input)
+        }
+    }
+}
+```
+{: file='ViewModel.kt'}
+
+5. Composable UI TaskScreen
+
+```kotlin
+@Composable
+fun TaskScreen(viewModel: TaskViewModel) {
+    val state by viewModel.state.collectAsState()
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp)
+    ) {
+        Text("Task Manager (MVI)", style = MaterialTheme.typography.headlineMedium)
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            TextField(
+                value = state.input,
+                onValueChange = { viewModel.process(TaskIntent.UpdateInput(it)) },
+                placeholder = { Text("Enter new task") },
+                modifier = Modifier.weight(1f)
+            )
+            Spacer(modifier = Modifier.width(8.dp))
+            Button(
+                onClick = { viewModel.process(TaskIntent.AddTask(state.input)) }
+            ) {
+                Text("Add")
+            }
+        }
+
+        Spacer(modifier = Modifier.height(24.dp))
+
+        if (state.tasks.isEmpty()) {
+            Text(
+                text = "No tasks yet. Add one above!",
+                style = MaterialTheme.typography.bodyLarge
+            )
+        } else {
+            LazyColumn {
+                items(state.tasks) { task ->
+                    TaskItem(
+                        taskTitle = task.title,
+                        isDone = task.isDone,
+                        onToggle = { viewModel.process(TaskIntent.ToggleTaskDone(task.id)) },
+                        onDelete = { viewModel.process(TaskIntent.DeleteTask(task.id)) }
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun TaskItem(
+    taskTitle: String,
+    isDone: Boolean,
+    onToggle: () -> Unit,
+    onDelete: () -> Unit
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(vertical = 8.dp)
+            .clickable { onToggle() },
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Checkbox(
+            checked = isDone,
+            onCheckedChange = { onToggle() }
+        )
+        Spacer(modifier = Modifier.width(8.dp))
+        Text(
+            text = taskTitle,
+            style = MaterialTheme.typography.bodyLarge,
+            modifier = Modifier.weight(1f)
+        )
+        IconButton(onClick = onDelete) {
+            Icon(Icons.Default.Delete, contentDescription = "Delete Task")
+        }
+    }
+}
+```
+{: file='TaskScreen.kt'}
+
+6. MainActivity
+
+```kotlin
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            val viewModel: TaskViewModel = viewModel()
+            TaskScreen(viewModel)
         }
     }
 }
