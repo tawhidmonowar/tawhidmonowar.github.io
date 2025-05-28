@@ -35,8 +35,9 @@ A RESTful API is an interface that allows different software systems to communic
 ## HTTP Status Codes in REST API
 
 ### 1xx – Informational
+
 | Code | Meaning                      | Description |
-|------|------------------------------|-------------|
+|:-----|:-----------------------------|:------------|
 | 100  | Continue                     | Request received, continue process |
 | 101  | Switching Protocols          | Protocol change accepted |
 | 102  | Processing (WebDAV)          | Server is processing request |
@@ -44,8 +45,9 @@ A RESTful API is an interface that allows different software systems to communic
 ---
 
 ### 2xx – Success
+
 | Code | Meaning                      | Description |
-|------|------------------------------|-------------|
+|:-----|:-----------------------------|:------------|
 | 200  | OK                           | Request succeeded |
 | 201  | Created                      | Resource created (e.g., POST success) |
 | 202  | Accepted                     | Request accepted for processing (but not completed yet) |
@@ -57,8 +59,9 @@ A RESTful API is an interface that allows different software systems to communic
 ---
 
 ### 3xx – Redirection
+
 | Code | Meaning                      | Description |
-|------|------------------------------|-------------|
+|:-----|:-----------------------------|:------------|
 | 300  | Multiple Choices             | More than one resource (not commonly used) |
 | 301  | Moved Permanently            | Resource URL has changed |
 | 302  | Found                        | Temporary redirection |
@@ -70,8 +73,9 @@ A RESTful API is an interface that allows different software systems to communic
 ---
 
 ### 4xx – Client Error
+
 | Code | Meaning                      | Description |
-|------|------------------------------|-------------|
+|:-----|------------------------------|:------------|
 | 400  | Bad Request                  | Invalid syntax or parameters |
 | 401  | Unauthorized                 | Authentication required |
 | 403  | Forbidden                    | Authenticated but no permission |
@@ -88,8 +92,9 @@ A RESTful API is an interface that allows different software systems to communic
 ---
 
 ### 5xx – Server Error
+
 | Code | Meaning                      | Description |
-|------|------------------------------|-------------|
+|:-----|:-----------------------------|:------------|
 | 500  | Internal Server Error        | Generic server error |
 | 501  | Not Implemented              | Method not implemented on server |
 | 502  | Bad Gateway                  | Invalid response from upstream server |
