@@ -10,6 +10,71 @@ categories: [Development, Design Patterns]
 
 An architectural design pattern is a general, reusable solution to a commonly occurring problem in software architecture. It defines how software components should be organized and interact — focusing on the high-level structure of an application.
 
+### Clean Architecture 
+
+Clean Architecture is a software design pattern that emphasizes separation of concerns, testability, and maintainability by organizing code into distinct layers. In Android development, it's often structured into the following layers:
+
+Presentation Layer
+
+- Handles the UI and user interactions.
+- Uses ViewModels or MVI/MVVM patterns.
+- Communicates with the domain layer to perform actions or fetch data.
+
+Domain Layer
+
+- Contains business logic and application rules.
+- Independent of any frameworks or libraries.
+- Includes use cases (interactors) that encapsulate specific functionality.
+
+Data Layer
+
+- Manages data sources (e.g., local database, network API).
+- Implements repository interfaces defined in the domain layer.
+
+![clean architecture](/assets/img/posts/clean-arc.png)
+
+Benefits:
+
+- **Testable**: Each layer can be tested independently.
+- **Maintainable**: Clear boundaries make the code easier to update or refactor.
+- **Scalable**: Easy to add new features or switch data sources without affecting other layers.
+
+**Example**: Get User Name
+
+**Domain Layer:**
+
+```kotlin
+class GetUserNameUseCase(private val userRepository: UserRepository) {
+    fun execute(): String {
+        return userRepository.getUserName()
+    }
+}
+
+interface UserRepository {
+    fun getUserName(): String
+}
+```
+
+**Data Layer:**
+
+```kotlin
+class UserRepositoryImpl : UserRepository {
+    override fun getUserName(): String {
+        return "tawhidmonowar" // could be from API or DB
+    }
+}
+```
+
+**Presentation Layer (ViewModel):**
+
+```kotlin
+class UserViewModel(private val getUserNameUseCase: GetUserNameUseCase) {
+    fun showUserName(): String {
+        return getUserNameUseCase.execute()
+    }
+}
+```
+
 ### MVVM (Model–View–ViewModel)
 
 MVVM is a design pattern that separates UI (View), business logic (ViewModel), and data (Model). It is widely used in Android. MVVM is an architectural pattern that divides an application into three core components:
@@ -22,7 +87,7 @@ MVVM is a design pattern that separates UI (View), business logic (ViewModel), a
   
 Example: Task Manager
 
-1. `Task` (Model)
+**1) `Task` (Model)**
 
 ```kotlin
 data class Task(
@@ -34,7 +99,7 @@ data class Task(
 {: file='Task.kt'}
 
 
-2. `TaskViewModel` (ViewModel)
+**2) `TaskViewModel` (ViewModel)**
 
 ```kotlin
 class TaskViewModel : ViewModel() {
@@ -68,7 +133,7 @@ class TaskViewModel : ViewModel() {
 ```
 {: file='TaskViewModel.kt'}
 
-3. `TaskScreen` (Compose UI/View)
+**3) `TaskScreen` (Compose UI/View)**
 
 ```kotlin
 @Composable
@@ -157,7 +222,7 @@ fun TaskItem(
 ```
 {: file='TaskScreen.kt'}
 
-4. `MainActivity`
+**4) `MainActivity`**
 
 ```kotlin
 class MainActivity : ComponentActivity() {
@@ -188,7 +253,7 @@ The following diagram provides a comprehensive overview of the MVI architecture.
 
 Example: Task Manager
 
-1. `Task` (Model)
+**1) `Task` (Model)**
    
 ```kotlin
 data class Task(
@@ -199,7 +264,7 @@ data class Task(
 ```
 {: file='Task.kt'}
 
-2. `TaskState` (State)
+**2) `TaskState` (State)**
 
 ```kotlin
 data class TaskState(
@@ -209,7 +274,7 @@ data class TaskState(
 ```
 {: file='TaskState.kt'}
 
-3. `Intents` (User actions)
+**3) `Intents` (User actions)**
 
 ```kotlin
 sealed class TaskIntent {
@@ -221,7 +286,7 @@ sealed class TaskIntent {
 ```
 {: file='TaskIntent.kt'}
 
-4. `ViewModel` (State + Intent processing)
+**4) `ViewModel` (State + Intent processing)**
 
 ```kotlin
 class TaskViewModel : ViewModel() {
@@ -279,7 +344,7 @@ class TaskViewModel : ViewModel() {
 ```
 {: file='ViewModel.kt'}
 
-5. Composable UI TaskScreen
+**5) Composable UI TaskScreen**
 
 ```kotlin
 @Composable
@@ -366,7 +431,7 @@ fun TaskItem(
 ```
 {: file='TaskScreen.kt'}
 
-6. MainActivity
+**6) MainActivity**
 
 ```kotlin
 class MainActivity : ComponentActivity() {
