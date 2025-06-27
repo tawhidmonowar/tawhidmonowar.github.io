@@ -25,7 +25,7 @@ Built and programmed an autonomous robot to complete complex tasks. Demonstrated
 ---
 
 - ### Winner – 40th National Science Fair  
-**Issued by [National Science Fair Bangladesh](https:/https://nmst.gov.bd/)** · Jul 2019  
+**Issued by [National Science Fair Bangladesh](https://nmst.gov.bd/)** · Jul 2019  
 Presented an innovative wind turbine design improving efficiency and reducing complexity. Recognized for creativity and practical impact in renewable energy. [Show Award](/assets/img/achievements/awards_40th_national_science_fair_barlekha_govt_collage.jpg)
 
 ---
