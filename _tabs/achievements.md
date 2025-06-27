@@ -35,3 +35,76 @@ Presented an innovative wind turbine design improving efficiency and reducing co
 Built a fully functional robotic arm using microcontrollers. Showcased hardware programming, presentation skills, and technical communication. [Show Award](/assets/img/achievements/awards_children_science_congress_2019.jpg)
 
 ---
+
+
+## Certifications
+
+- ### ICPC - International Collegiate Programming Contest
+**Issuer:** ACM ICPC  
+**Credential ID:** O8Z6XNWSL225  
+**Skills:** `C++`, `Competitive Programming`  
+**[Show Credential](https://icpc.global/ICPCID/O8Z6XNWSL225)**
+
+---
+
+- ### Android App Development
+**Issuer:** Bohubrihi  
+**Credential ID:** 64554dcaeb17a480830c1777  
+**Skills:** `Java`, `Android Development`, `UI & UX Design`  
+**[Show Credential](https://res.cloudinary.com/bohubrihi/image/upload/v1738947652/production/64554dcaeb17a480830c1777.pdf)**
+
+--- 
+
+- ### Digital Security Essentials
+**Issuer:** ICT Division  
+**Credential ID:** MC-K336781P576948K1060  
+**Skills:** `Digital Security`  
+**[Show Credential](/assets/pdf/certificates/digital_security_essentials.pdf)**
+
+---
+
+- ### HTML, CSS & Bootstrap
+**Issuer:** Bohubrihi  
+**Credential ID:** 14256-162-756-0956  
+**Skills:** `HTML`, `CSS`, `Bootstrap`  
+**[Show Credential](/assets/pdf/certificates/HTML5-CSS3-038-Bootstrap.pdf)**
+
+---
+
+- ### Java (Basic) Certificate
+**Issuer:** HackerRank  
+**Credential ID:** 2E4C379A0F4C  
+**Skills:** `Java`, `Object-Oriented Programming (OOP)`  
+**[Show Credential](https://www.hackerrank.com/certificates/2e4c379a0f4c)**
+
+--- 
+
+- ### Kotlin (Basic) Certificate
+**Issuer:** Amigoscode  
+**Credential ID:** cert_k3lnpbqw  
+**Skills:** `Kotlin`, `Kotlin Coroutines`  
+**[Show Credential](/assets/pdf/certificates/kotlin-programming-language.pdf)**
+
+---
+
+- ### Python Programming & Basic Data Science
+**Issuer:** ICT Division  
+**Credential ID:** EDGE-DSTS-126-1518-00001  
+**Skills:** `Python`, `Machine Learning`, `Data Science`  
+**[Show Credential](https://training.edge.gov.bd/storage/certificate/student-training/certificate_674d8ad7403790.65777105.pdf)**
+
+---
+
+- ### SQL (Basic) Certificate
+**Issuer:** HackerRank  
+**Credential ID:** 40419BDDOBCA  
+**Skills:** `SQL`  
+**[Show Credential](https://www.hackerrank.com/certificates/40419bdd0bca)**
+
+---
+
+- ### Troubleshooting Operating System
+**Issuer:** ICT Division  
+**Credential ID:** MC-K336781V577442J121C  
+**Skills:** `Troubleshooting`  
+**[Show Credential](/assets/pdf/certificates/troubleshooting-operating-system.pdf)**
