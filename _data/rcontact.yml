@@ -1,4 +1,7 @@
 #  The right side contact options.
+- type: Upwork
+  icon: 'fa-brands fa-upwork'
+  url:  'https://www.upwork.com/freelancers/tawhidmonowar'
 
 - type: HackerRank
   icon: 'fa-brands fa-hackerrank'
