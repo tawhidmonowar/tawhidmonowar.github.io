@@ -36,6 +36,12 @@
         </li>
         <!-- .nav-item -->
       {% endfor %}
+      <li class="nav-item">
+        <a href="{{ '/assets/pdf/resume/TawhidMonowar_Resume.pdf' | relative_url }}" target="_blanck" class="nav-link" id="resume-nav">
+          <i class="fa-solid fa-file-lines"></i>
+          <span id="resume-icon">RESUME</span>
+        </a>
+      </li>
       <li class="nav-item{% if page.url contains '/blogs' %}{{ " active" }}{% endif %}">
         <a href="{{ '/blogs' | relative_url }}" class="nav-link">
           <i class="fa-solid fa-feather"></i>
