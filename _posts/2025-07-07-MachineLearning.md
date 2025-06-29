@@ -42,7 +42,7 @@ Unsupervised Learning is a type of machine learning where the model learns patte
 ### Clustering:  
 Clustering is an unsupervised learning technique that groups similar data points together based on their features. It’s used to find patterns or segments in data, like grouping customers by buying behavior or organizing photos by similarity.
 
-## Reinforcement Learning (RL):  
+## Reinforcement Learning (RL)  
 Reinforcement Learning is a type of machine learning where an agent learns by interacting with an environment and receiving rewards or penalties. It’s used in game-playing AIs, robotics, and self-driving cars to make decisions and improve performance over time.
 
 
