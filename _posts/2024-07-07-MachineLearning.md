@@ -3,7 +3,7 @@ title: Machine Learning
 description: Machine learning is a branch of Artificial Intelligence that focuses on developing models and algorithms that let computers learn from data without being explicitly programmed for every task.
 author: tawhidmonowar
 date: 2024-07-07 11:30:00 +06:00
-categories: [Machine Learning]
+categories: [Machine Learning, Machine Learning]
 ---
 
 ![singly linked list](/assets/img/posts/ai_ml_vs_dl.jpg)
