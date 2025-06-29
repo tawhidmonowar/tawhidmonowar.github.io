@@ -11,13 +11,13 @@ categories: [Machine Learning]
 ## Introduction
 
 ### Artificial Intelligence (AI):  
-AI is the science of making machines think and act like humans. It includes things like decision-making, language understanding, and problem-solving.
+AI is the science of making machines think and act like humans. This includes problem-solving, decision-making, understanding natural language, and even recognizing patterns. AI can be rule-based (following pre-set logic) or learning-based, and it's used in everything from chatbots to recommendation systems.
 
 ### Machine Learning (ML):  
-ML is a part of AI where machines learn from data and get better over time without being directly programmed.
+ML is a part of AI where machines learn from data and get better over time without being directly programmed. It focuses on building algorithms that can find patterns in data and make predictions or decisions. For example, an ML model can learn to predict house prices based on past sales data.
 
 ### Deep Learning (DL):  
-DL is a type of ML that uses neural networks to handle complex tasks like image recognition, speech, and language translation.
+DL is a type of ML that uses neural networks to handle complex tasks like image recognition, speech, and language translation. It excels at handling large amounts of unstructured data like images, audio, or text. Deep learning powers advanced technologies like facial recognition, self-driving cars, and voice assistants like Alexa or Siri.
 
 ### Computer Vision (CV): 
 Computer Vision is a field of AI that enables machines to see, understand, and interpret images or videos like humans. It’s used in things like facial recognition, object detection, and medical image analysis.
