@@ -3,7 +3,7 @@ title: Machine Learning
 description: Machine learning is a branch of Artificial Intelligence that focuses on developing models and algorithms that let computers learn from data without being explicitly programmed for every task.
 author: tawhidmonowar
 date: 2024-07-07 11:30:00 +06:00
-categories: [Machine Learning, Machine Learning]
+categories: [Artificial Intelligence, Machine Learning]
 ---
 
 ![singly linked list](/assets/img/posts/ai_ml_vs_dl.jpg)
@@ -45,4 +45,10 @@ Clustering is an unsupervised learning technique that groups similar data points
 
 ## Reinforcement Learning (RL)  
 Reinforcement Learning is a type of machine learning where an agent learns by interacting with an environment and receiving rewards or penalties. It’s used in game-playing AIs, robotics, and self-driving cars to make decisions and improve performance over time.
+
+## Linear Regression  
+Linear Regression is a fundamental statistical method used to model the relationship between a dependent variable and one or more independent variables. It works by fitting a straight line through the data points that best represents this relationship. The goal is to minimize the error between the predicted and actual values using a technique called least squares. This method is commonly used in areas like finance, economics, and health science for predicting outcomes and identifying trends.
+
+
+
 
