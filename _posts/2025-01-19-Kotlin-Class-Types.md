@@ -70,7 +70,7 @@ fun main() {
 
 ```
 
-## Singleton in Kotlin (Object)
+## Singleton 
 
 In Kotlin, the `object` keyword is used to declare a singleton — a class with only one instance. It's useful for utilities, managers, or storing global state.
 
@@ -121,3 +121,33 @@ fun main() {
 }
 
 ```
+
+## Enum Class
+
+An enum class is used to define a fixed set of constants. It’s great for representing states, options, or categories like days of the week, directions, or user roles.
+
+```kotlin
+
+enum class Direction {
+    NORTH, SOUTH, EAST, WEST
+}
+
+enum class Planet(val gravity: Double) {
+    EARTH(9.8),
+    MARS(3.7),
+    JUPITER(24.8)
+}
+
+fun main() {
+    val dir = Direction.EAST
+    println("Direction: $dir")         // Output: Direction: EAST
+
+    val planet = Planet.MARS
+    println("Planet: ${planet.name}")         // Output: Planet: MARS
+    println("Gravity: ${planet.gravity} m/s²") // Output: Gravity: 3.7 m/s²
+}
+
+```
+
+
+
