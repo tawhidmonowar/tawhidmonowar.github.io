@@ -1,5 +1,5 @@
 ---
-title: Kotlin Class Types Overview
+title: Kotlin Class Types
 description: A quick overview of all class types in Kotlin, including regular classes, data classes, object declarations, sealed classes, abstract classes, and more—explaining their purpose and usage in concise terms.
 author: tawhidmonowar
 date: 2025-01-19 11:30:00 +06:00
