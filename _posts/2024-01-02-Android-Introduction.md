@@ -1,5 +1,5 @@
 ---
-title: Android
+title: Android Introduction
 description: Android is an open source and Linux-based Operating System for mobile devices.
 author: tawhidmonowar
 date: 2024-01-02 11:30:00 +06:00
