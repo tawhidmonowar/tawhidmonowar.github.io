@@ -51,5 +51,46 @@ fun main() = runBlocking {
 }
 ```
 
+## Coroutine Builders
+
+Coroutine builders are functions used to create and launch coroutines in Kotlin. They define how coroutines start and what they return.
+
+- `launch`: Starts a coroutine that does not return a result.
+
+```kotlin
+launch {
+    println("Task running")
+}
+
+```
+
+- `async`: Starts a coroutine that returns a result (`Deferred`).
+
+```kotlin
+val result = async { 10 + 20 }
+println(result.await())
+```
+
+- `runBlocking`: Starts a coroutine and blocks the current thread until it finishes. Used in `main()` or tests.
+
+```kotlin
+runBlocking {
+    println("Inside runBlocking")
+}
+```
+
+### Scoped Coroutine
+
+A scoped coroutine runs within a specific CoroutineScope, like runBlocking, viewModelScope, or a custom scope. It is automatically canceled when the scope ends, making it safe and structured.
+
+```kotlin
+fun main() = runBlocking {
+    launch {
+        delay(1000)
+        println("Scoped coroutine finished")
+    }
+}
+```
+
 
 
