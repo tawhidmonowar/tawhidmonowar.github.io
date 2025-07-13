@@ -1,5 +1,5 @@
 ---
-title: Machine Learning
+title: Machine Learning Essentials
 description: Machine learning is a branch of Artificial Intelligence that focuses on developing models and algorithms that let computers learn from data without being explicitly programmed for every task.
 author: tawhidmonowar
 date: 2024-07-07 11:30:00 +06:00
@@ -43,12 +43,35 @@ Unsupervised Learning is a type of machine learning where the model learns patte
 ### Clustering:  
 Clustering is an unsupervised learning technique that groups similar data points together based on their features. It’s used to find patterns or segments in data, like grouping customers by buying behavior or organizing photos by similarity.
 
-## Reinforcement Learning (RL)  
+## Reinforcement Learning
 Reinforcement Learning is a type of machine learning where an agent learns by interacting with an environment and receiving rewards or penalties. It’s used in game-playing AIs, robotics, and self-driving cars to make decisions and improve performance over time.
 
-## Linear Regression  
+## Linear Regression 
 Linear Regression is a fundamental statistical method used to model the relationship between a dependent variable and one or more independent variables. It works by fitting a straight line through the data points that best represents this relationship. The goal is to minimize the error between the predicted and actual values using a technique called least squares. This method is commonly used in areas like finance, economics, and health science for predicting outcomes and identifying trends.
 
+### Linear Regression Notations
 
+| Symbol         | Meaning                                                |
+|----------------|--------------------------------------------------------|
+| \( x \)        | Input feature (independent variable)                   |
+| \( y \)        | Target variable (dependent variable)                   |
+| \( \hat{y} \)  | Predicted value by the model                           |
+| \( n \)        | Number of data points                                  |
+| \( m \)        | Number of features (in multivariate regression)        |
+| \( i \)        | Index of the data point                                |
+| \( w \)        | Weight / coefficient for feature(s)                    |
+| \( b \)        | Bias term / intercept                                  |
+| \( \mathbf{x}^{(i)} \) | Feature vector for the i-th data point         |
+| \( \mathbf{w} \)       | Weight vector                                  |
+| \( \hat{y}^{(i)} \)    | Predicted value for the i-th data point        |
+| \( J(w, b) \)          | Cost function (Mean Squared Error)             |
+| \( \alpha \)           | Learning rate (used in gradient descent)       |
+| \( \mathbf{X} \)       | Input matrix (shape: \( n \times m \))         |
+| \( \mathbf{y} \)       | Output/label vector (shape: \( n \times 1 \))  |
+
+
+### Hypothesis
+
+### Linear Regression (Single Input)
 
 
