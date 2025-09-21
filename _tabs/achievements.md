@@ -36,7 +36,6 @@ Built a fully functional robotic arm using microcontrollers. Showcased hardware 
 
 ---
 
-
 ## Certifications
 
 - ### ICPC - International Collegiate Programming Contest
@@ -46,12 +45,40 @@ Built a fully functional robotic arm using microcontrollers. Showcased hardware 
 
 ---
 
+- ### Python Programming & Basic Data Science
+**Issuer:** ICT Division  
+**Credential ID:** EDGE-DSTS-126-1518-00001 — [Show Credential](https://training.edge.gov.bd/storage/certificate/student-training/certificate_674d8ad7403790.65777105.pdf)  
+**Skills:** `Python`, `Machine Learning`, `Data Science`  
+
+---
+
 - ### Android App Development
 **Issuer:** Bohubrihi  
 **Credential ID:** 64554dcaeb17a480830c1777 — [Show Credential](https://res.cloudinary.com/bohubrihi/image/upload/v1738947652/production/64554dcaeb17a480830c1777.pdf)  
 **Skills:** `Java`, `Android Development`, `UI & UX Design`  
 
 --- 
+
+- ### Kotlin (Basic) Certificate
+**Issuer:** Amigoscode  
+**Credential ID:** cert_k3lnpbqw — [Show Credential](/assets/pdf/certificates/kotlin-programming-language.pdf)  
+**Skills:** `Kotlin`, `Kotlin Coroutines`  
+
+---
+
+- ### Java (Basic) Certificate
+**Issuer:** HackerRank  
+**Credential ID:** 2E4C379A0F4C — [Show Credential](https://www.hackerrank.com/certificates/2e4c379a0f4c)  
+**Skills:** `Java`, `Object-Oriented Programming (OOP)`  
+
+--- 
+
+- ### SQL (Basic) Certificate
+**Issuer:** HackerRank  
+**Credential ID:** 40419BDDOBCA — [Show Credential](https://www.hackerrank.com/certificates/40419bdd0bca)  
+**Skills:** `SQL`  
+
+---
 
 - ### Digital Security Essentials
 **Issuer:** ICT Division  
@@ -64,34 +91,6 @@ Built a fully functional robotic arm using microcontrollers. Showcased hardware 
 **Issuer:** Bohubrihi  
 **Credential ID:** 14256-162-756-0956 — [Show Credential](/assets/pdf/certificates/HTML5-CSS3-038-Bootstrap.pdf)  
 **Skills:** `HTML`, `CSS`, `Bootstrap`  
-
----
-
-- ### Java (Basic) Certificate
-**Issuer:** HackerRank  
-**Credential ID:** 2E4C379A0F4C — [Show Credential](https://www.hackerrank.com/certificates/2e4c379a0f4c)  
-**Skills:** `Java`, `Object-Oriented Programming (OOP)`  
-
---- 
-
-- ### Kotlin (Basic) Certificate
-**Issuer:** Amigoscode  
-**Credential ID:** cert_k3lnpbqw — [Show Credential](/assets/pdf/certificates/kotlin-programming-language.pdf)  
-**Skills:** `Kotlin`, `Kotlin Coroutines`  
-
----
-
-- ### Python Programming & Basic Data Science
-**Issuer:** ICT Division  
-**Credential ID:** EDGE-DSTS-126-1518-00001 — [Show Credential](https://training.edge.gov.bd/storage/certificate/student-training/certificate_674d8ad7403790.65777105.pdf)  
-**Skills:** `Python`, `Machine Learning`, `Data Science`  
-
----
-
-- ### SQL (Basic) Certificate
-**Issuer:** HackerRank  
-**Credential ID:** 40419BDDOBCA — [Show Credential](https://www.hackerrank.com/certificates/40419bdd0bca)  
-**Skills:** `SQL`  
 
 ---
 
