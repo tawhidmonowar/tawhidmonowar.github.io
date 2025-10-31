@@ -2,7 +2,7 @@
 title: Japanese Language
 description: I'm currently learning Japanese to explore its rich culture and language structure.
 author: tawhidmonowar
-date: 2025-10-26 11:30:00 +06:00
+date: 2025-10-30 11:30:00 +06:00
 categories: [Language, Japanese Language]
 ---
 
