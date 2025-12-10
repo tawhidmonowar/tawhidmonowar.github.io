@@ -88,8 +88,8 @@ int main()
 }
 ```
 
-Time complexity: O(m*n)
-Auxiliary complexity: O(m*n)
+Time complexity: O(m * n)
+Auxiliary Space: O(m * n)
 
 ## Example 02: Levenshtein distance using Iterative with two matrix rows approach
 By simply storing two rows of the matrix at a time, the iterative technique with two matrix rows reduces space complexity. It iterates through the strings row by row, storing the current and past calculations in two rows.
@@ -153,3 +153,6 @@ int main()
 
 Time complexity: O(m*n)
 Auxiliary Space: O(n)
+
+## Referance
+- [GeeksForGeeks](https://www.geeksforgeeks.org/dsa/introduction-to-levenshtein-distance/) 
