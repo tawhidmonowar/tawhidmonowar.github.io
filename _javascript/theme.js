@@ -88,14 +88,13 @@ class Theme {
     });
 
     if (!this.#hasMode) {
-      this.#setDark();
       return;
     }
 
     if (this.#isDarkMode) {
       this.#setDark();
     } else {
-      this.#setLight();
+      this.#setDark();
     }
   }
 
