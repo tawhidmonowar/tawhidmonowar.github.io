@@ -34,7 +34,7 @@ class Theme {
     if (this.#hasMode) {
       return this.#mode;
     } else {
-      return this.#sysDark ? this.DARK : this.LIGHT;
+      return this.#sysDark ? this.DARK : this.DARK;
     }
   }
 
@@ -94,7 +94,7 @@ class Theme {
     if (this.#isDarkMode) {
       this.#setDark();
     } else {
-      this.#setDark();
+      this.#setLight();
     }
   }
 
