@@ -6,6 +6,12 @@ order: 3
 
 ## Awards
 
+- ### Employee of the Year - 2025 
+**Issued by [Envobyte Ltd.](https://www.linkedin.com/company/envobyte/)** · Jan 2025  
+Grateful and proud to share that I’ve been promoted from Software Engineer Level 1 to Level 2, and also honored to receive Employee of the Year award. — [Show Award](https://www.linkedin.com/posts/tawhidmonowar_grateful-and-proud-to-share-that-ive-been-activity-7416145210578976768-7GUL)
+
+---
+
 - ### Rising Talent – Upwork 
 **Issued by [Upwork](https://www.upwork.com/freelancers/tawhidmonowar)** · June 2024  
 Recognized as a Rising Talent (top 5%) for early success, strong client satisfaction, and excellent performance on the platform. — [Show Award](https://www.upwork.com/freelancers/tawhidmonowar)
