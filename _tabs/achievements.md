@@ -44,6 +44,13 @@ Built a fully functional robotic arm using microcontrollers. Showcased hardware 
 
 ## Certifications
 
+- ### Fundamentals of Swift Programming
+**Issuer:** Alison  
+**Credential ID:** 23765428 — [Show Credential](https://alison.com/verify/58b53a5ab4)  
+**Skills:** `Swift`  
+
+---
+
 - ### ICPC - International Collegiate Programming Contest
 **Issuer:** ACM ICPC  
 **Credential ID:** O8Z6XNWSL225 — [Show Credential](https://icpc.global/ICPCID/O8Z6XNWSL225)  
