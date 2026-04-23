@@ -1,6 +1,6 @@
 ---
-title: Ktor Backend
-description: Ktor is a lightweight, and asynchronous framework developed by JetBrains for building web applications, HTTP services, and mobile backends using Kotlin.
+title: iOS App Architecture & Desig Patterns
+description: App architecture defines how different parts of an application are structured and interact with each other. 
 author: tawhidmonowar
 date: 2026-02-15 11:30:00 +06:00
 categories: [Development, iOS Development]
