@@ -6,10 +6,10 @@ date: 2026-02-02 11:30:00 +06:00
 categories: [Development, iOS Development]
 ---
 
-# SwiftUI Layout
+## SwiftUI Layout
 SwiftUI uses stacks, frames, spacing, and alignment to build responsive UI layouts.
 
-## VStack
+### VStack
 Arranges views vertically.
 
 ```swift
@@ -19,7 +19,7 @@ VStack(alignment: .leading, spacing: 8) {
 }
 ```
 
-## HStack
+### HStack
 Arranges views horizontally.
 
 ```swift
@@ -32,7 +32,7 @@ HStack {
 
 - `Spacer()` pushes views apart.
 
-## ZStack
+### ZStack
 Overlays views on top of each other.
 
 ```swift
@@ -42,7 +42,7 @@ ZStack {
 }
 ```
 
-## Example
+**Example:**
 
 ```swift
 import SwiftUI
@@ -72,9 +72,9 @@ struct StacksDemo: View {
 }
 ```
 
-# Frames and Alignment
+## Frames and Alignment
 
-## frame()
+### frame()
 
 Controls size and alignment.
 
@@ -84,7 +84,7 @@ Controls size and alignment.
 .frame(maxWidth: .infinity, alignment: .leading)
 ```
 
-## padding()
+### padding()
 
 Adds spacing around a view.
 
@@ -94,7 +94,7 @@ Adds spacing around a view.
 .padding(16)
 ```
 
-## alignmentGuide()
+### alignmentGuide()
 
 Custom alignment control.
 
@@ -105,7 +105,7 @@ Custom alignment control.
 ```
 
 
-## Frame Example
+### Frame Example
 
 ```swift
 import SwiftUI
@@ -136,3 +136,108 @@ struct FrameDemo: View {
 }
 ```
 
+## SwiftUI Layout: Grids
+
+SwiftUI grids are used to display items in rows and columns.
+
+### Lazy Grids
+
+SwiftUI provides:
+
+- `LazyVGrid` → Vertical grid
+- `LazyHGrid` → Horizontal grid
+
+They load items lazily for better performance.
+
+### LazyVGrid
+
+Displays items vertically in grid format.
+
+```swift
+LazyVGrid(columns: columns, spacing: 12) {
+    
+}
+```
+
+GridItem Defines column or row layout.
+
+### Flexible Grid
+
+```swift
+let columns = [
+    GridItem(.flexible()),
+    GridItem(.flexible())
+]
+```
+
+- Automatically adjusts item width.
+
+**Example:**
+
+```swift
+import SwiftUI
+
+struct GridDemo: View {
+    
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
+    var body: some View {
+        
+        LazyVGrid(columns: columns, spacing: 12) {
+            
+            ForEach(1...6, id: \.self) { i in
+                
+                Text("Item \(i)")
+                    .frame(maxWidth: .infinity)
+                    .padding(12)
+                    .background(.blue.opacity(0.1))
+                    .cornerRadius(8)
+            }
+        }
+        .padding()
+    }
+}
+```
+
+### Adaptive Grid
+
+Automatically fits as many items as possible in a row.
+
+## Syntax
+
+```swift
+[GridItem(.adaptive(minimum: 100))]
+```
+
+- `minimum` defines minimum item width.
+
+Adaptive Grid Example
+
+```swift
+import SwiftUI
+
+struct AdaptiveGridDemo: View {
+    
+    let columns = [
+        GridItem(.adaptive(minimum: 100), spacing: 12)
+    ]
+    
+    var body: some View {
+        
+        LazyVGrid(columns: columns, spacing: 12) {
+            
+            ForEach(1...12, id: \.self) { i in
+                
+                Text("Card \(i)")
+                    .frame(maxWidth: .infinity, minHeight: 60)
+                    .background(.green.opacity(0.12))
+                    .cornerRadius(8)
+            }
+        }
+        .padding()
+    }
+}
+```
