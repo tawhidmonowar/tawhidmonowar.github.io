@@ -333,6 +333,235 @@ struct ContentView: View {
 }
 ```
 
+### Search Bar
+SwiftUI provides searchable functionality using the `searchable` modifier.
+
+```swift
+struct ContentView: View {
+    
+    // Search text state
+    @State private var searchText = ""
+    
+    // Sample data
+    let fruits = [
+        "Apple",
+        "Banana",
+        "Orange",
+        "Mango"
+    ]
+    
+    var body: some View {
+        
+        NavigationStack {
+            
+            List {
+                
+                // Filter list based on search text
+                ForEach(
+                    fruits.filter {
+                        
+                        searchText.isEmpty
+                        ? true
+                        : $0.localizedCaseInsensitiveContains(searchText)
+                    },
+                    id: \.self
+                ) { fruit in
+                    
+                    Text(fruit)
+                }
+            }
+            
+            // Search bar
+            .searchable(text: $searchText)
+            .navigationTitle("Search")
+        }
+    }
+}
+```
+
+
+### Checkmark
+A checkmark is commonly used to show selected items.
+
+```swift
+struct ContentView: View {
+    
+    // Selection state
+    @State private var isSelected = false
+    
+    var body: some View {
+        
+        Button {
+            
+            // Toggle selection
+            isSelected.toggle()
+            
+        } label: {
+            
+            HStack {
+                
+                Text("Select Item")
+                
+                Spacer()
+                
+                // Show checkmark when selected
+                if isSelected {
+                    
+                    Image(systemName: "checkmark")
+                        .foregroundColor(.green)
+                }
+            }
+            .padding()
+        }
+    }
+}
+```
+
+
+### Radio Button
+SwiftUI has no built-in radio button, but it can be created manually.
+
+```swift
+struct ContentView: View {
+    
+    // Selected option
+    @State private var selected = "Apple"
+    
+    // Radio options
+    let fruits = [
+        "Apple",
+        "Banana",
+        "Orange"
+    ]
+    
+    var body: some View {
+        
+        VStack(alignment: .leading) {
+            
+            ForEach(fruits, id: \.self) { fruit in
+                
+                Button {
+                    
+                    // Update selected value
+                    selected = fruit
+                    
+                } label: {
+                    
+                    HStack {
+                        
+                        // Radio icon
+                        Image(
+                            systemName:
+                                selected == fruit
+                                ? "largecircle.fill.circle"
+                                : "circle"
+                        )
+                        
+                        Text(fruit)
+                    }
+                }
+            }
+        }
+        .padding()
+    }
+}
+```
+
+
+### ShareLink
+`ShareLink` allows users to share content.
+
+```swift
+struct ContentView: View {
+    
+    var body: some View {
+        
+        ShareLink(
+            item: "Hello SwiftUI!"
+        ) {
+            
+            Label(
+                "Share",
+                systemImage: "square.and.arrow.up"
+            )
+        }
+    }
+}
+```
+
+
+### Gauge
+`Gauge` displays progress visually like a speedometer.
+
+```swift
+struct ContentView: View {
+    
+    // Gauge value
+    @State private var speed = 70.0
+    
+    var body: some View {
+        
+        Gauge(
+            value: speed,
+            in: 0...100
+        ) {
+            
+            Text("Speed")
+            
+        } currentValueLabel: {
+            
+            Text("\(Int(speed))")
+        }
+        .padding()
+    }
+}
+```
+
+
+### Refreshable
+Adds pull-to-refresh functionality.
+
+```swift
+struct ContentView: View {
+    
+    var body: some View {
+        
+        List(1...20, id: \.self) { item in
+            
+            Text("Item \(item)")
+        }
+        
+        // Pull to refresh
+        .refreshable {
+            
+            // Refresh data
+            print("Refreshing...")
+        }
+    }
+}
+```
+### DisclosureGroup
+Expands and collapses content.
+
+```swift
+struct ContentView: View {
+    
+    @State private var isExpanded = false
+    
+    var body: some View {
+        
+        DisclosureGroup(
+            "Show Details",
+            isExpanded: $isExpanded
+        ) {
+            
+            Text("Hidden Content")
+        }
+        .padding()
+    }
+}
+```
+
 ### TextField
 `TextField` is used for single-line text input.
 
