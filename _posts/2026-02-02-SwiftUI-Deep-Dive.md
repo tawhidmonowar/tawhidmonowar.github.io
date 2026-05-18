@@ -1,10 +1,100 @@
 ---
-title: SwiftUI Design Basic
-description: SwiftUI is Apple’s UI framework used to build apps for iPhone, iPad, Mac, and more.
+title: SwiftUI Deep Dive
+description: SwiftUI is a modern framework to develop user interfaces for all of Apple's platforms such as iOS, watchOS, macOS, tvOS, iPadOS, and visionOS. It was developed by Apple in 2019 as a replacement of traditional frameworks such as UIKit.
 author: tawhidmonowar
 date: 2026-02-02 11:30:00 +06:00
 categories: [Development, iOS Development]
 ---
+
+
+## SwiftUI - Overview
+### Declarative Syntax
+SwiftUI uses declarative syntaxes to develop an App. Declarative syntaxes allow developers to describe the user interface and its behaviour and the rest of the implementation is done by the SwiftUI itself. This approach simplifies the code so that it would be easy to understand and reuse. It focuses on what should be displayed rather than how it is rendered.
+
+Example: 
+
+```swift
+struct ContentView: View {
+   var body: some View {
+      Text("Hello")
+   }
+}
+```
+
+### Layout 
+SwiftUI supports layout systems based on stacks such as VStack, HStack, and ZStack. This system simplifies the alignment of components in the current view. It can also allow nesting of views.
+
+```swift
+struct ContentView: View {   
+   var body: some View {
+      VStack{
+         Text("TutorialsPoint").font(.title)
+      }
+   }
+}
+```
+
+
+### Views and Modifiers
+SwiftUI provides various in-built views such as Text, Image, Toggle, etc., and modifiers such as .font, .fill, .stroke, .foregroundColor, etc. Views are the fundamental building block of the interface whereas modifiers are used to change the appearance of the views. Using these views and modifiers we can create easy or complex user interfaces with few lines of code.
+
+```swift
+struct ContentView: View {
+   var body: some View {
+      Text("TutorialsPoint").font(.title)
+   }
+}
+```
+
+### Gesture
+Gestures are used to add interactivity to the interface by responding to the user inputs like tap, long press, drag, hover, etc. SwiftUI provides some in-built gestures like Tap, Long Press, Drag, Rotation, etc., using these gestures we can create an interactive UI.
+
+```swift
+struct ContentView: View {
+   var body: some View {
+      Text("TutorialsPoint").onTapGesture {
+         // Handling tap gesture
+      }
+   }
+}
+```
+
+### Animation
+In SwiftUI, we can animate any component very easily with the help of the .withAnimation() modifier. It also provides inbuilt animations and transitions which we can easily apply on the UI components. Animation enhances the user experience of the app and can improve the interactivity of the App. We can create custom animation very easily.
+
+```swift
+struct ContentView: View {
+   @State private var size: CGFloat = 2.0
+
+   var body: some View {
+      Button("Tap me to see the magic") {
+         withAnimation {
+            self.size *= 2.5
+         }
+      }.scaleEffect(size)
+   }
+}
+```
+
+### UI Controls
+SwiftUI supports various in-built UI controls such as buttons, sliders, text fields, pickers, etc. Controls are the most essential part of the UI using these controls developers can easily develop user-friendly apps for Apple's platforms.
+
+```swift
+struct ContentView: View {
+   var body: some View {
+      Button(action:{
+         // Hanldle button action
+      })
+   }
+}
+```
+
+## Basic Components
+
+
+
+
+
 
 ## SwiftUI Layout
 SwiftUI uses stacks, frames, spacing, and alignment to build responsive UI layouts.
