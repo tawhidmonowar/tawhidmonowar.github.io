@@ -41,7 +41,7 @@ struct User {
     var isPremium: Bool
 }
 
-let user = User(id: 1, name: "Envobyte", isPremium: true)
+let user = User(id: 1, name: "Tawhid", isPremium: true)
 
 print(user.name)
 ```
@@ -62,7 +62,7 @@ class UserManager {
 }
 
 let manager = UserManager()
-manager.updateName("Envobyte")
+manager.updateName("Tawhid")
 
 print(manager.username)
 ```
@@ -112,7 +112,7 @@ print(classProfile2.name) // B
 Optionals are used when a value may or may not exist.
 
 ```swift
-var username: String? = "Envobyte"
+var username: String? = "Tawhid"
 
 if let name = username {
     print("Username is \(name)")
@@ -137,7 +137,7 @@ func showUserName(_ name: String?) {
     print("User name is \(name)")
 }
 
-showUserName("Envobyte")
+showUserName("Tawhid")
 showUserName(nil)
 ```
 
@@ -152,7 +152,7 @@ let greeting: (String) -> String = { name in
     return "Hello, \(name)"
 }
 
-print(greeting("Envobyte"))
+print(greeting("Tawhid"))
 ```
 
 ---
@@ -189,7 +189,7 @@ extension String {
     }
 }
 
-let name = "Envobyte"
+let name = "Tawhid"
 print(name.addWelcomeText())
 ```
 
@@ -246,7 +246,7 @@ do {
 import Foundation
 
 func fetchUserName() async -> String {
-    return "Envobyte"
+    return "Tawhid"
 }
 
 Task {
@@ -275,7 +275,7 @@ class User {
     }
 }
 
-var user: User? = User(name: "Envobyte")
+var user: User? = User(name: "Tawhid")
 user = nil
 ```
 
@@ -417,7 +417,7 @@ class ProfileViewModel: ObservableObject {
     @Published var username = "Guest"
 
     func updateName() {
-        username = "Envobyte"
+        username = "Tawhid"
     }
 }
 
@@ -477,7 +477,7 @@ struct DetailsView: View {
 import SwiftUI
 
 struct UserListView: View {
-    let users = ["Envobyte", "Alex", "John", "Sarah"]
+    let users = ["Tawhid", "Alex", "John", "Sarah"]
 
     var body: some View {
         List(users, id: \.self) { user in
@@ -673,7 +673,7 @@ class HomeViewController: UIViewController {
 import UIKit
 
 class UserTableViewController: UITableViewController {
-    let users = ["Envobyte", "Alex", "John"]
+    let users = ["Tawhid", "Alex", "John"]
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return users.count
@@ -798,7 +798,7 @@ protocol UserRepositoryProtocol {
 class UserRepository: UserRepositoryProtocol {
     func getUsers() async throws -> [UserModel] {
         return [
-            UserModel(id: 1, name: "Envobyte"),
+            UserModel(id: 1, name: "Tawhid"),
             UserModel(id: 2, name: "John")
         ]
     }
@@ -1104,7 +1104,7 @@ struct TaskExampleView: View {
     }
 
     func loadUser() async -> String {
-        return "Envobyte"
+        return "Tawhid"
     }
 }
 ```
@@ -1462,7 +1462,7 @@ Outstanding developers are strong debuggers. They know how to find problems quic
 ### Print Debugging
 
 ```swift
-let username = "Envobyte"
+let username = "Tawhid"
 print("Current username: \(username)")
 ```
 
