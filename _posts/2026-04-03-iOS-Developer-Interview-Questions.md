@@ -46,7 +46,7 @@ Swift is:
 Example:
 
 ```swift
-let name = "Envobyte"
+let name = "Tawheed"
 print("Hello, \(name)")
 ```
 
@@ -76,7 +76,7 @@ Use `let` by default unless the value needs to change.
 Type inference means Swift can automatically understand the data type.
 
 ```swift
-let name = "Envobyte" // Swift understands this is String
+let name = "Tawheed" // Swift understands this is String
 let age = 25          // Swift understands this is Int
 let price = 9.99      // Swift understands this is Double
 ```
@@ -84,7 +84,7 @@ let price = 9.99      // Swift understands this is Double
 You can also define type manually:
 
 ```swift
-let username: String = "Envobyte"
+let username: String = "Tawheed"
 let count: Int = 10
 ```
 
@@ -95,7 +95,7 @@ let count: Int = 10
 Optional means a value may exist or may be nil.
 
 ```swift
-var username: String? = "Envobyte"
+var username: String? = "Tawheed"
 username = nil
 ```
 
@@ -120,7 +120,7 @@ if let email = email {
 Optional binding safely unwraps an optional value.
 
 ```swift
-let name: String? = "Envobyte"
+let name: String? = "Tawheed"
 
 if let unwrappedName = name {
     print("Name is \(unwrappedName)")
@@ -157,7 +157,7 @@ Use `guard let` when invalid data should stop the function.
 Force unwrapping uses `!` to extract an optional value.
 
 ```swift
-let name: String? = "Envobyte"
+let name: String? = "Tawheed"
 print(name!)
 ```
 
@@ -202,7 +202,7 @@ Guest
 Common data types:
 
 ```swift
-let name: String = "Envobyte"
+let name: String = "Tawheed"
 let age: Int = 25
 let price: Double = 9.99
 let isPremium: Bool = true
@@ -216,7 +216,7 @@ let rating: Float = 4.5
 Array stores multiple values in order.
 
 ```swift
-let users = ["Envobyte", "John", "Sarah"]
+let users = ["Tawheed", "John", "Sarah"]
 
 print(users[0])
 ```
@@ -237,7 +237,7 @@ Dictionary stores key-value pairs.
 
 ```swift
 let user = [
-    "name": "Envobyte",
+    "name": "Tawheed",
     "email": "test@example.com"
 ]
 
@@ -273,7 +273,7 @@ func greetUser(name: String) -> String {
     return "Hello, \(name)"
 }
 
-let message = greetUser(name: "Envobyte")
+let message = greetUser(name: "Tawheed")
 print(message)
 ```
 
@@ -288,7 +288,7 @@ let greeting: (String) -> String = { name in
     return "Hello, \(name)"
 }
 
-print(greeting("Envobyte"))
+print(greeting("Tawheed"))
 ```
 
 ---
@@ -345,7 +345,7 @@ struct User {
     var name: String
 }
 
-let user = User(id: 1, name: "Envobyte")
+let user = User(id: 1, name: "Tawheed")
 print(user.name)
 ```
 
@@ -367,7 +367,7 @@ class UserManager {
 }
 
 let manager = UserManager()
-manager.updateName("Envobyte")
+manager.updateName("Tawheed")
 
 print(manager.name)
 ```
@@ -517,7 +517,7 @@ extension String {
     }
 }
 
-print("Envobyte".addWelcomeText())
+print("Tawheed".addWelcomeText())
 ```
 
 ---
@@ -610,7 +610,7 @@ class User {
     }
 }
 
-var user: User? = User(name: "Envobyte")
+var user: User? = User(name: "Tawheed")
 user = nil
 ```
 
@@ -924,7 +924,7 @@ class UserViewModel: ObservableObject {
     @Published var username = "Guest"
 
     func updateName() {
-        username = "Envobyte"
+        username = "Tawheed"
     }
 }
 ```
@@ -965,7 +965,7 @@ struct DetailsView: View {
 
 ```swift
 struct UserListView: View {
-    let users = ["Envobyte", "John", "Sarah"]
+    let users = ["Tawheed", "John", "Sarah"]
 
     var body: some View {
         List(users, id: \.self) { user in
@@ -1111,7 +1111,7 @@ NSLayoutConstraint.activate([
 
 ```swift
 class UserTableViewController: UITableViewController {
-    let users = ["Envobyte", "John", "Sarah"]
+    let users = ["Tawheed", "John", "Sarah"]
 
     override func tableView(
         _ tableView: UITableView,
@@ -1510,7 +1510,7 @@ Examples:
 
 ```swift
 func fetchName() async -> String {
-    return "Envobyte"
+    return "Tawheed"
 }
 
 Task {
@@ -1546,7 +1546,7 @@ class ProfileViewModel: ObservableObject {
     @Published var username = "Guest"
 
     func updateName() {
-        username = "Envobyte"
+        username = "Tawheed"
     }
 }
 ```
@@ -1751,7 +1751,7 @@ protocol UserRepositoryProtocol {
 
 class UserRepository: UserRepositoryProtocol {
     func getUsers() async throws -> [String] {
-        return ["Envobyte", "John"]
+        return ["Tawheed", "John"]
     }
 }
 ```
