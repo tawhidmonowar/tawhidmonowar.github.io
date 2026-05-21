@@ -6,6 +6,12 @@ order: 3
 
 ## Awards
 
+- ### Star Performer of the Quarter - 2026
+**Issued by [Envobyte Ltd.](https://www.linkedin.com/company/envobyte/)** · May 2026  
+Honored to receive the Star Performer of the Quarter 2026 award at Envobyte. — [Show Award](https://www.linkedin.com/posts/tawhidmonowar_starperformer-envobyte-achievement-share-7460369839568863233-Q1wu)
+
+---
+
 - ### Employee of the Year - 2025 
 **Issued by [Envobyte Ltd.](https://www.linkedin.com/company/envobyte/)** · Jan 2025  
 Grateful and proud to share that I’ve been promoted from Software Engineer Level 1 to Level 2, and also honored to receive Employee of the Year award. — [Show Award](https://www.linkedin.com/posts/tawhidmonowar_grateful-and-proud-to-share-that-ive-been-activity-7416145210578976768-7GUL)
