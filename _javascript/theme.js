@@ -6,7 +6,6 @@
 class Theme {
   static #modeKey = 'mode';
   static #modeAttr = 'data-mode';
-  static #darkMedia = window.matchMedia('(prefers-color-scheme: dark)');
   static switchable = !document.documentElement.hasAttribute(this.#modeAttr);
 
   static get DARK() {
@@ -28,18 +27,19 @@ class Theme {
    * Gets the current visual state of the theme.
    *
    * @returns {string} The current visual state, either the mode if it exists,
-   *                   or the system dark mode state ('dark' or 'light').
+   *                   or default DARK mode.
    */
   static get visualState() {
     if (this.#hasMode) {
       return this.#mode;
     } else {
-      return this.#sysDark ? this.DARK : this.DARK;
+      return this.DARK;
     }
   }
 
   static get #mode() {
     return (
+      localStorage.getItem(this.#modeKey) ||
       sessionStorage.getItem(this.#modeKey) ||
       document.documentElement.getAttribute(this.#modeAttr)
     );
@@ -51,10 +51,6 @@ class Theme {
 
   static get #hasMode() {
     return this.#mode !== null;
-  }
-
-  static get #sysDark() {
-    return this.#darkMedia.matches;
   }
 
   /**
@@ -71,21 +67,12 @@ class Theme {
   }
 
   /**
-   * Initializes the theme based on system preferences or stored mode
+   * Initializes the theme based on stored mode
    */
   static init() {
     if (!this.switchable) {
       return;
     }
-
-    this.#darkMedia.addEventListener('change', () => {
-      const lastMode = this.#mode;
-      this.#clearMode();
-
-      if (lastMode !== this.visualState) {
-        this.#notify();
-      }
-    });
 
     if (!this.#hasMode) {
       return;
@@ -102,26 +89,29 @@ class Theme {
    * Flips the current theme mode
    */
   static flip() {
-    if (this.#hasMode) {
-      this.#clearMode();
+    if (this.visualState === this.DARK) {
+      this.#setLight();
     } else {
-      this.#sysDark ? this.#setLight() : this.#setDark();
+      this.#setDark();
     }
     this.#notify();
   }
 
   static #setDark() {
     document.documentElement.setAttribute(this.#modeAttr, this.DARK);
+    localStorage.setItem(this.#modeKey, this.DARK);
     sessionStorage.setItem(this.#modeKey, this.DARK);
   }
 
   static #setLight() {
     document.documentElement.setAttribute(this.#modeAttr, this.LIGHT);
+    localStorage.setItem(this.#modeKey, this.LIGHT);
     sessionStorage.setItem(this.#modeKey, this.LIGHT);
   }
 
   static #clearMode() {
     document.documentElement.removeAttribute(this.#modeAttr);
+    localStorage.removeItem(this.#modeKey);
     sessionStorage.removeItem(this.#modeKey);
   }
 
@@ -134,5 +124,14 @@ class Theme {
 }
 
 Theme.init();
+
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('mode-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      Theme.flip();
+    });
+  }
+});
 
 export default Theme;
